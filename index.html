@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Myth</title>
+</head>
+
+
+<body>
+
+
+    <script src="scrl.js"></script>
+    <script src="prlx.js"></script>
+
+    <header>
+
+        <h2 class="h2o">Myth</h2>
+        <a href="#" class="hamburger"></a>
+        <nav id="navbar">
+            <ul class="menu">
+                <li><a href="#" class="menu-item">Home</a></li>
+                <li><a href="#info" class="menu-item">O Mnie</a></li>
+                <li><a href="#" class="menu-item">Portfolio</a></li>
+                <li><a href="#" class="menu-item">Projekty</a></li>
+                <li><a href="#kontakt" class="menu-item">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="main">
+        <h1>Witaj na mojej stronie WWW !</h1>
+    </section>
+
+
+    <script src="main.js"></script>
+
+    <div class="parallax">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section id="info" class="one">
+
+            <h1>Kim Jestem ?</h1>
+
+
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Nazywam się Mateusz i pochodzę z Polski. Poza tym Lubię robić strony internetowe.</h2>
+            </div>
+        </div>
+
+
+        <label id="dark-change"></label>
+
+        <main>
+
+            <div class="respon">
+            </div>
+        </main>
+        <script>
+            var content = document.getElementsByTagName('body')[0];
+            var darkMode = document.getElementById('dark-change');
+            darkMode.addEventListener('click', function() {
+                darkMode.classList.toggle('active');
+                content.classList.toggle('night');
+            })
+        </script>
+
+        <script>
+            const navSlide = () => {
+                const burger = document.querySelector('.burger');
+                const nav = document.querySelector('.nav-links');
+                const navLinks = document.querySelectorAll('.burger');
+
+                burger.addEventListener('click', () => {
+                    nav.classList.toggle('nav-active');
+                });
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = ''
+                    } else {
+                        console.log(index);
+                        link.style.animation = 'navLinkFade 0.5s ease forwards ${7 / 1.5}s'
+                    }
+                });
+
+            }
+
+            navSlide();
+        </script>
+        <script src="app.js"></script>
+
+
+        </section>
+
+        <script>
+            const parallax = document.getElementById("parallax");
+
+            window.addEventListener("scroll", function() {
+                let offset = window.pageYOffset;
+                parallax.style.backgroundPositionY = offset * 0.2 + "px";
+            })
+        </script>
+
+        <section id="kontakt" class="three">
+            <div class="container">
+                <form action="https://formcarry.com/s/aZ85b607NFC" method="POST" accept-charset="UTF-8">
+                    <h3>Skontak<span>tuj Się</span></h3>
+                    <input type="text" name="nazwa" placeholder="Twoje Imię">
+                    <input type="email" name="email" placeholder="Twój E-mail">
+                    <input type="text" name="wiadomość" placeholder="Jak mogę ci pomóć">
+                    <button name="submit">Wyślij</button>
+                </form>
+            </div>
+            <script src="https://carrier.formcarry.com/js/v1.js"></script>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+</body>
+
+</html>

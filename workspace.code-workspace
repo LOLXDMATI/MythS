@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CODING",
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#213304",
+			"titleBar.activeBackground": "#2E4705",
+			"titleBar.activeForeground": "#F5FDE9"
+		}
+	}
+}
